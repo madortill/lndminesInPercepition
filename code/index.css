@@ -52,10 +52,11 @@ body {
 }
 
 .goal-lomda {
-    padding: 0% 10%;
+    padding: 0% 5%;
     position: relative;
     top: -8%;
 }
+
 .open-screen {
     position: relative;
     z-index: 2;
@@ -211,7 +212,7 @@ body {
 .topButton {
     width: 18vw;
     position: absolute;
-    top: 15vh;
+    top: 19vh;
     left: 3vw;
     z-index: 1000;
 }

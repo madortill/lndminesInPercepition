@@ -74,8 +74,8 @@ body {
 }
 
 .btnNext {
-    bottom: -18%;
-    left: 25%;
+    bottom: -11%;
+    left: 21%;
     position: absolute;
     padding: 15px 30px;
     font-size: 1.5rem;
@@ -472,7 +472,7 @@ td {
 
 .testButton {
     position: absolute;
-    bottom: 2vh;
+    bottom: 0.5vh;
     left: 50%;
     transform: translateX(-50%);
 }

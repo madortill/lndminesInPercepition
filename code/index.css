@@ -212,7 +212,7 @@ body {
 .topButton {
     width: 18vw;
     position: absolute;
-    top: 19vh;
+    top: 17vh;
     left: 3vw;
     z-index: 1000;
 }

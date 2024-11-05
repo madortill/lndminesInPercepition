@@ -186,9 +186,7 @@ const onClickAbout = () => {
   document.querySelector(".homePageButtons").classList.add("hidden");
   // משנה את התמונה של הכפתור העליון
   document.querySelector(".topButton").classList.add("aboutPageBtn");
-  document
-    .querySelector(".topButton")
-    .setAttribute("src", "../assets/images/grapics/home-page/right-arrow.svg");
+  document.querySelector(".topButton").setAttribute("src", "../assets/images/grapics/home-page/right-arrow.svg");
   strcurrentPage = "aboutPage";
 };
 

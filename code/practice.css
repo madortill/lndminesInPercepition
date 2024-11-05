@@ -1,4 +1,17 @@
 /* תרגול */
+
+@font-face {
+    font-family: 'Heebo';
+    src: url('../assets/fonts/heebo.regular.ttf');
+}
+
+@font-face {
+    font-family: 'Heebo-Bold';
+    src: url('../assets/fonts/heebo.black.ttf');
+}
+* {
+    font-family: "Heebo";
+}
 .topButtonPractice {
     width: 15vw;
     top: 10vh;
@@ -53,7 +66,7 @@
 }
 
 .correctAnswer {
-    background-color: rgba(98, 212, 159, 0.671);
+    background-color: rgba(70, 155, 115, 0.671);
 }
 
 .wrongAnswer {
@@ -89,7 +102,7 @@
     width: 95.7vw;
     height: 12vh;
     position: absolute;
-    top: 20vh;
+    top: 24vh;
     background-color: #79bee0bb;
     padding: 0.5em;
     font-weight: 500;
@@ -117,15 +130,16 @@
 }
 
 .examNameInput {
+    font-family: "Heebo";
     border: none;
     width: 98.5vw;
     height: 6vh;
     position: absolute;
-    top: 70.5vh;
+    top: 77vh;
     background-color: #79bee0bb;
     font-weight: 500;
     font-size: 1em;
-    font-family: 'Heebo';
+    font-family: 'segoeu';
     text-align: center;
     color: black;
 }
@@ -169,6 +183,11 @@
     top: 45vh;
 }
 
+.prcticeQuestionContainer > .binary {
+    position: absolute;
+    top: 55vh;
+}
+
 .examQuestionContainer .question{
     position: static;
 } 
@@ -179,16 +198,16 @@
 
 .answerTracker {
     background-color: #79BEE0;
-    width: 90vw;
-    height: 13vh;
+    width: 50vw;
+    height: 6vh;
     position: absolute;
     bottom: 10vh;
-    left: 2.8vw;
+    left: 26vw;
     border-radius: 1.4em;
     display: flex;
     flex-wrap: wrap;
     padding: 0.5em;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .answerPill {
@@ -331,7 +350,7 @@
 }
 
 .questionContainer {
-    height: 46vh;
+    height: 82vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

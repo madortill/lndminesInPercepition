@@ -54,7 +54,7 @@ body {
 .goal-lomda {
     padding: 0% 5%;
     position: relative;
-    top: -8%;
+    top: -5%;
 }
 
 .open-screen {
@@ -180,8 +180,8 @@ body {
 }
 
 .gray {
-    /* filter: grayscale(100); */
-    filter: hue-rotate(140deg);
+    filter: grayscale(100);
+    /* filter: hue-rotate(140deg); */
    
 }
 
@@ -320,7 +320,7 @@ body {
 
 .aboutPage {
     padding: 0vh 5vw;
-    height: 81vh;
+    height: 79vh;
     width: 90vw;
     position: absolute;
     top: 17vh;
@@ -477,6 +477,10 @@ td {
     transform: translateX(-50%);
 }
 
+.testButton-practice {
+    top: 2vh;
+    left: 80vw;
+}
 /* תעודת זהות של תרופות */
 .medicineId {
     pointer-events: none;

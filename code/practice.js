@@ -1866,6 +1866,8 @@ const endofPractice = () => {
 Description: */
 const onClickExam = () => {
     // מאפס משתנים
+    document.querySelector(`.topButton`).style.top = "2vh";
+    document.querySelector(`.topButton`).style.left = "80vw";
     currentTestQuestion = 0;
     nExamCorrectAnswer = 0;
     arrExamQuestions = [];
@@ -1873,7 +1875,7 @@ const onClickExam = () => {
     sec = 0;
     // שומר עמוד נוכחי
     strcurrentPage = "examPrePage";
-    // document.querySelector(`.examQuestionContainer`).classList.add("hidden"); 
+    document.querySelector(`.examQuestionContainer`).classList.add("hidden"); 
     // מעלים דף פתיחה וכפתור אודות
     document.querySelector(`.homePageButtons`).classList.add("hidden");
     document.querySelector(`.aboutButton`).classList.add("hidden");
@@ -1938,7 +1940,7 @@ const startExam = (event) => {
         // מעלים דף של לפני מבחן
         document.querySelector(`.beforeExamPage`).classList.add("hidden"); 
         // מראה מבחן
-        // document.querySelector(`.examQuestionContainer`).classList.remove("hidden"); 
+        document.querySelector(`.examQuestionContainer`).classList.remove("hidden"); 
         // משנה גל, מעלים כפתור עליון
         document.querySelector('.wave').setAttribute("src", "../assets/images/grapics/test/test-wave.svg");
         document.querySelector('.topButton').classList.add("hidden");
@@ -1948,7 +1950,7 @@ const startExam = (event) => {
         document.querySelector(`.false`).style.backgroundColor = "white";
         document.querySelector(`.true`).style.backgroundColor = "white";
         for (let i = 1; i <= 4; i++) {
-            // document.querySelector(`.examQuestionContainer .ans${i} img`).setAttribute("src", "../assets/images/grapics/practice/answer-squre-unmarked.svg");
+            document.querySelector(`.examQuestionContainer .ans${i} img`).setAttribute("src", "../assets/images/grapics/practice/answer-squre-unmarked.svg");
         }
     } else {
         if (arrExamChosenAnswer[formerTestQuestion] === undefined) {
@@ -2001,7 +2003,7 @@ const startExam = (event) => {
         } else {
             // מוריד סימונים קודמים
             for (let i = 1; i <= 4; i++) {
-                // document.querySelector(`.examQuestionContainer .ans${i} img`).setAttribute("src", "../assets/images/grapics/practice/answer-squre-unmarked.svg");
+                document.querySelector(`.examQuestionContainer .ans${i} img`).setAttribute("src", "../assets/images/grapics/practice/answer-squre-unmarked.svg");
             }
             if (arrExamChosenAnswer[currentTestQuestion] !== undefined) {
                 // משנה תמונה של תשובה למסומנת
@@ -2029,16 +2031,16 @@ const startExam = (event) => {
     document.querySelector('.testCurrentQuestionDisplay').innerHTML = `שאלה מספר ${currentTestQuestion + 1}`;
     document.querySelector(`.answerPill${currentTestQuestion + 1}`).style.backgroundColor = "#a3a2a2";
     // מראה את השאלה הנוכחית ומכניס אליה את התוכן
-    // document.querySelector('.examQuestionContainer .question').innerHTML = arrExamQuestions[currentTestQuestion].question;
+    document.querySelector('.examQuestionContainer .question').innerHTML = arrExamQuestions[currentTestQuestion].question;
     if (arrExamQuestions[currentTestQuestion].type === "binary") {
         // שם מאזינים לתשובות
-        // document.querySelector(`.examQuestionContainer .binary .true`).addEventListener("click", onClickAnswer);
-        // document.querySelector(`.examQuestionContainer .binary .false`).addEventListener("click", onClickAnswer);
+        document.querySelector(`.examQuestionContainer .binary .true`).addEventListener("click", onClickAnswer);
+        document.querySelector(`.examQuestionContainer .binary .false`).addEventListener("click", onClickAnswer);
     } else {
         for (let i = 1; i <= 4; i++) {
             // מכניס תוכן לתשובות ושם עליהן מאזין
-            // document.querySelector(`.examQuestionContainer .ans${i} div`).innerHTML = arrExamQuestions[currentTestQuestion][`ans${i}`];
-            // document.querySelector(`.examQuestionContainer .ans${i}`).addEventListener("click", onClickAnswer);
+            document.querySelector(`.examQuestionContainer .ans${i} div`).innerHTML = arrExamQuestions[currentTestQuestion][`ans${i}`];
+            document.querySelector(`.examQuestionContainer .ans${i}`).addEventListener("click", onClickAnswer);
         }
     }
     // שם מאזינים לחצים
@@ -2130,7 +2132,7 @@ const endOfTest = () => {
     strcurrentPage = "endOfTest";
     // מעלים פופ אפ ואת המבחן ומראה את דף הסיום
     document.querySelector(`.examSubmitionPopUp`).classList.add("hidden");
-    // document.querySelector(`.examQuestionContainer`).classList.add("hidden");
+    document.querySelector(`.examQuestionContainer`).classList.add("hidden");
     document.querySelector(`.afterExamPage`).classList.remove("hidden");
     // משנה גל ומראה כפתור חזור
     document.querySelector('.wave').setAttribute("src", "../assets/images/grapics/home-page/opening-wave.svg");
@@ -2143,7 +2145,7 @@ const endOfTest = () => {
 Description:  */
 const reviewTest = (event) => {
     // מעלים את הדף סיום ומראה את המבחן
-    // document.querySelector(`.examQuestionContainer`).classList.remove("hidden");
+    document.querySelector(`.examQuestionContainer`).classList.remove("hidden");
     document.querySelector(`.afterExamPage`).classList.add("hidden");
     // משנה גל ומעלים כפתור חזור
     document.querySelector('.wave').setAttribute("src", "../assets/images/grapics/test/test-wave.svg");

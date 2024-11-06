@@ -324,7 +324,7 @@ body {
     width: 90vw;
     position: absolute;
     top: 17vh;
-    overflow: hidden;
+    overflow-y: scroll;
     color: #16425b;
     display: flex;
     justify-content: center;
@@ -354,7 +354,7 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 80vh;
+    top: 2vh;
 }
 
 .logos>img {

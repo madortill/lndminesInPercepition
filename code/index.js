@@ -478,7 +478,7 @@ const creatMedShelfs = (event) => {
     .querySelector(`.homeButton`)
     .addEventListener("click", sendToHomePage);
   // שומר שאלות ושולח לתרגול
-  QUESTIONS = shuffle(DATA[strCurrentMedType]["questionsPractice"]);
+  // QUESTIONS = shuffle(DATA[strCurrentMedType]["questionsPractice"]);
   // document.querySelector(`.practiceButton`).addEventListener("click", onClickPractice);
   // משנה צבע מדפים ושם מאזין לפתיחה שלהם
   for (let i = 1; i <= objMedsShelfsColors[strCurrentMedType][1]; i++) {
